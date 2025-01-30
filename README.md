@@ -100,5 +100,5 @@ This project is licensed under the MIT License.
 ---
 
 ### Contact
-For any queries or support, reach out to **your.email@example.com**.
+For any queries or support, reach out to **yaredbitewlign@gmail.com**.
 
