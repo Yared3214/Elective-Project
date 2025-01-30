@@ -2,7 +2,6 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using EducationalResourceAPI.Models;
-using EducationalResourceAPI.Repositories;
 using EducationalResourceAPI.Services;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
@@ -14,7 +13,6 @@ builder.Services.Configure<DatabaseSettings>(
     builder.Configuration.GetSection("DatabaseSettings"));
 
 // Register services
-builder.Services.AddSingleton<EducationalResourceRepository>();
 // builder.Services.AddSingleton<EducationalResourceService>();
 builder.Services.AddSingleton<IUserService, UserService>();
 builder.Services.AddSingleton<IEducationalResourceService, EducationalResourceService>();
