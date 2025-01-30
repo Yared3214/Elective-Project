@@ -19,8 +19,13 @@ namespace EducationalResourceAPI.Controllers
 
         [Authorize]
         [HttpGet]
-        public async Task<IActionResult> GetAllResources() =>
-            Ok(await _service.GetAllResourcesAsync());
+        public async Task<IActionResult> GetAllResources([FromQuery] int page = 1,
+    [FromQuery] int pageSize = 3)
+        {
+            var resources = await _service.GetAllResourcesAsync(page, pageSize);
+            return Ok(resources);
+        }
+
 
         [Authorize]
         [HttpGet("{id}")]

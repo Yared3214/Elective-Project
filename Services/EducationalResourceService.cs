@@ -16,9 +16,14 @@ namespace EducationalResourceAPI.Services
             _resources = database.GetCollection<EducationalResource>("Resources");
         }
 
-        public async Task<List<EducationalResource>> GetAllResourcesAsync() =>
-            await _resources.Find(resource => true).ToListAsync();
+        public async Task<List<EducationalResource>> GetAllResourcesAsync(int page, int pageSize)
+        {
 
+            return await _resources.Find(resource => true)
+                .Skip((page - 1) * pageSize)
+                .Limit(pageSize)
+                .ToListAsync();
+        }
         public async Task<EducationalResource?> GetResourceByIdAsync(string id) =>
             await _resources.Find(resource => resource.Id == id).FirstOrDefaultAsync();
 
