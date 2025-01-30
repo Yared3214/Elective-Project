@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hp\\desktop\\EducationalResourceAPI\\EducationalResourceAPI.csproj": {}
+    "C:\\Users\\hp\\desktop\\Elective-Project\\EducationalResourceAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hp\\desktop\\EducationalResourceAPI\\EducationalResourceAPI.csproj": {
+    "C:\\Users\\hp\\desktop\\Elective-Project\\EducationalResourceAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hp\\desktop\\EducationalResourceAPI\\EducationalResourceAPI.csproj",
+        "projectUniqueName": "C:\\Users\\hp\\desktop\\Elective-Project\\EducationalResourceAPI.csproj",
         "projectName": "EducationalResourceAPI",
-        "projectPath": "C:\\Users\\hp\\desktop\\EducationalResourceAPI\\EducationalResourceAPI.csproj",
+        "projectPath": "C:\\Users\\hp\\desktop\\Elective-Project\\EducationalResourceAPI.csproj",
         "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hp\\desktop\\EducationalResourceAPI\\obj\\",
+        "outputPath": "C:\\Users\\hp\\desktop\\Elective-Project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config"
